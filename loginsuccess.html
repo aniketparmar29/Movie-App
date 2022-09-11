@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ Hotstar</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/2657/PNG/128/disney_plus_icon_161064.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav1">
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div> 
+            
+            <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="">
+            <div class="dropdown">
+              <button class="dropbtn">TV 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Movies 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Sports 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div> 
+              <div class="dropdown">
+
+                  <button class="dropbtn">Disney+ 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+              </div>
+              <div class="dropdown">
+
+                  <button class="dropbtn">Kids 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+              </div>
+        </div>
+        <div class="nav2">
+          <div class="dropdown">
+            <input class="dropbtn" type="text" name="serch" id="query" placeholder="Search" oninput="debounce(notop,700)">
+            <div class="serachi">
+            </div>
+          </div> 
+        <button onclick="serchmovie()"><a href="#ahi" style="text-decoration: none;color:white">search Movie</a></button>
+          <button><a href="index.html" style="text-decoration: none;color:white">LogOut</a></button>
+          <div class="popupsingin">
+            <p class="closesinin" onclick="closesinin()">&#10005</p>
+            <form>
+              <input type="text" id="lusername" placeholder="Enter  Your username">
+              <input type="text" id="lpassword" placeholder="Enter  Your password">
+          </form>
+          <button onclick="Login()">Login</button>
+            <button onclick="opensingup()">Create New Account</button>
+        </div>
+        <div class="popupsingup">
+            <p class="closesinup" onclick="closesignup()">&#10005</p>
+            <form>
+              <input type="text" id="name" placeholder="Enter  Your Name">
+              <input type="email" id="email" placeholder="Enter  Your email">
+              <input type="text" id="password" placeholder="Enter  Your password">
+              <input type="text" id="username" placeholder="Enter  Your username">
+              <input type="number" id="mobile" placeholder="Enter  Your mobile">
+              <input type="text" id="description" placeholder="Enter  Your description">
+          </form>
+          <button onclick="Register()">Register</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides">
+         <div>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2212/1042212-h-0e83e926cfc1" alt="">
+         </div>
+         </div>
+      <div class="mySlides">
+         <div>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/6530/1326530-h-f2a7e4e4e3d6" alt="">
+         </div>
+         </div>
+      <div class="mySlides">
+         <div>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/6700/1026700-h-baab56827741" alt="">
+         </div>
+         </div>
+      <div class="mySlides">
+         <div>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8315/1328315-h-017b4fc66d35" alt="">
+         </div>
+         </div>
+      <div class="mySlides">
+         <div>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9475/1339475-h-990c355522f1" alt="">
+         </div>
+         </div>
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+   </div>
+   <div class="btnt">
+     <button id="sort-lh">Sort by low rating to high</button>
+     <button id="sort-hl">Sort by high rating to low</button>
+   </div>
+    <div class="dis">
+      <!-- <img src="Spinner-1s-200px.gif" alt=""> -->
+      <img src="https://www.reactiongifs.us/wp-content/uploads/2015/12/loading_wait_doctor_who.gif" alt="">
+    </div>
+    <h1 id="ahi" style="text-align: center;margin-top: 50px;margin-bottom: 50px;color: white;">Search Results</h1>
+    <div class="con">
+      <img src="https://c.tenor.com/Kwq2I-vIuOQAAAAi/downsign-loading.gif" alt="">
+    </div>
+    <div class="popupoffer">
+      
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
