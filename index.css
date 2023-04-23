@@ -83,6 +83,7 @@ body{
   background-color: rgb(19,25,39);
   border: none;
   color: white;
+  border:2px solid #fff;
   font-size: 17px;
 }
 .nav2{
@@ -390,4 +391,59 @@ height: 100px;
   right: 20px;
   top:0px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+  }
+  .nav1{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    flex-direction:column;
+    width:100%;
+  }
+  .container{
+    width:90%;
+  }
+  .nav1 .dropdown{
+    margin: auto;
+  }
+  .nav1 img{
+    width:80%;
+    margin: auto;
+  }
+  .nav2{
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    padding: 10px;
+    justify-content:flex-start;
+  }
+  .nav2 .dropbtn{
+    width:100%;
+    margin: auto;
+  }
+  .hamburger{
+    display:none;
+  }
+  .dis{
+    width:90%
+  }
+  .con img{
+    width:80%;
+  }
+  #query{
+    /* margin-right:30px; */
+    width:80%;
+    margin-left:60px;
+
+    padding:20px;
+  }
+  .nav1 .dropdown .dropbtn{
+    font-size:30px;
+  }
 }
